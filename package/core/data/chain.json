@@ -1,0 +1,352 @@
+[
+  {
+    "chainId": 1,
+    "name": "Ethereum",
+    "icon": {
+      "light": "icons/chain/ethereum.light.svg",
+      "dark": "icons/chain/ethereum.dark.svg"
+    },
+    "explorer": "https://etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 2714,
+    "name": "Abstract",
+    "icon": {
+      "light": "icons/chain/abstract.light.svg",
+      "dark": "icons/chain/abstract.dark.svg"
+    },
+    "explorer": "https://abscan.org/",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 42161,
+    "name": "Arbitrum",
+    "icon": {
+      "light": "icons/chain/arbitrum.light.svg",
+      "dark": "icons/chain/arbitrum.dark.svg"
+    },
+    "explorer": "https://arbiscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 8453,
+    "name": "Base",
+    "icon": {
+      "light": "icons/chain/base.light.svg",
+      "dark": "icons/chain/base.dark.svg"
+    },
+    "explorer": "https://basescan.org",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 80094,
+    "name": "Berachain",
+    "icon": {
+      "light": "icons/chain/berachain.light.svg",
+      "dark": "icons/chain/berachain.dark.svg"
+    },
+    "explorer": "https://berascan.com/",
+    "nativeCurrency": {
+      "name": "BERA",
+      "symbol": "BERA",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 81457,
+    "name": "Blast",
+    "icon": {
+      "light": "icons/chain/blast.light.svg",
+      "dark": "icons/chain/blast.dark.svg"
+    },
+    "explorer": "https://blastscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 60808,
+    "name": "BOB",
+    "icon": {
+      "light": "icons/chain/bob.light.svg",
+      "dark": "icons/chain/bob.dark.svg"
+    },
+    "explorer": "https://explorer.gobob.xyz/",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 42220,
+    "name": "Celo",
+    "icon": {
+      "light": "icons/chain/celo.light.svg",
+      "dark": "icons/chain/celo.dark.svg"
+    },
+    "explorer": "https://celoscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 252,
+    "name": "Fraxtal",
+    "icon": {
+      "light": "icons/chain/fraxtal.light.svg",
+      "dark": "icons/chain/fraxtal.dark.svg"
+    },
+    "explorer": "https://fraxscan.com",
+    "nativeCurrency": {
+      "name": "Frax",
+      "symbol": "FRAX",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 100,
+    "name": "Gnosis",
+    "icon": {
+      "light": "icons/chain/gnosis.light.svg",
+      "dark": "icons/chain/gnosis.dark.svg"
+    },
+    "explorer": "https://gnosisscan.io",
+    "nativeCurrency": {
+      "name": "xDai",
+      "symbol": "xDai",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 999,
+    "name": "Hyperliquid",
+    "icon": {
+      "light": "icons/chain/hyperliquid.light.svg",
+      "dark": "icons/chain/hyperliquid.dark.svg"
+    },
+    "explorer": "https://purrsec.com/",
+    "nativeCurrency": {
+      "name": "Hyper",
+      "symbol": "HYPE",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 57073,
+    "name": "Ink",
+    "icon": {
+      "light": "icons/chain/lens.light.svg",
+      "dark": "icons/chain/lens.dark.svg"
+    },
+    "explorer": "https://explorer.inkonchain.com",
+    "nativeCurrency": {
+      "name": "ETH",
+      "symbol": "Ether",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 232,
+    "name": "Lens",
+    "icon": {
+      "light": "icons/chain/lens.light.svg",
+      "dark": "icons/chain/lens.dark.svg"
+    },
+    "explorer": "https://explorer.lens.xyz/",
+    "nativeCurrency": {
+      "name": "GHO",
+      "symbol": "GHO",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 59144,
+    "name": "Linea",
+    "icon": {
+      "light": "icons/chain/linea.light.svg",
+      "dark": "icons/chain/linea.dark.svg"
+    },
+    "explorer": "https://lineascan.build/",
+    "nativeCurrency": {
+      "name": "ETH",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 1135,
+    "name": "Lisk",
+    "icon": {
+      "light": "icons/chain/lisk.light.svg",
+      "dark": "icons/chain/lisk.dark.svg"
+    },
+    "explorer": "https://blockscout.lisk.com/",
+    "nativeCurrency": {
+      "name": "ETH",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 5000,
+    "name": "Mantle",
+    "icon": {
+      "light": "icons/chain/mantle.light.svg",
+      "dark": "icons/chain/mantle.dark.svg"
+    },
+    "explorer": "https://mantlescan.xyz",
+    "nativeCurrency": {
+      "name": "Mantle",
+      "symbol": "MNT",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 5000,
+    "name": "Metal",
+    "icon": {
+      "light": "icons/chain/mantle.light.svg",
+      "dark": "icons/chain/mantle.dark.svg"
+    },
+    "explorer": "https://mantlescan.xyz",
+    "nativeCurrency": {
+      "name": "Mantle",
+      "symbol": "MNT",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 1088,
+    "name": "Metis",
+    "icon": {
+      "light": "icons/chain/metis.light.svg",
+      "dark": "icons/chain/metis.dark.svg"
+    },
+    "explorer": "https://andromeda-explorer.metis.io",
+    "nativeCurrency": {
+      "name": "Metis",
+      "symbol": "METIS",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 34443,
+    "name": "Mode",
+    "icon": {
+      "light": "icons/chain/mode.light.svg",
+      "dark": "icons/chain/mode.dark.svg"
+    },
+    "explorer": "https://explorer.mode.network",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 137,
+    "name": "Polygon",
+    "icon": {
+      "light": "icons/chain/polygon.light.svg",
+      "dark": "icons/chain/polygon.dark.svg"
+    },
+    "explorer": "https://polygonscan.com",
+    "nativeCurrency": {
+      "name": "MATIC",
+      "symbol": "MATIC",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 10,
+    "name": "Optimism",
+    "icon": {
+      "light": "icons/chain/optimism.light.svg",
+      "dark": "icons/chain/optimism.dark.svg"
+    },
+    "explorer": "https://optimistic.etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 534352,
+    "name": "Scroll",
+    "icon": {
+      "light": "icons/chain/scroll.light.svg",
+      "dark": "icons/chain/scroll.dark.svg"
+    },
+    "explorer": "https://scrollscan.com",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 167000,
+    "name": "Taiko",
+    "icon": {
+      "light": "icons/chain/taiko.light.svg",
+      "dark": "icons/chain/taiko.dark.svg"
+    },
+    "explorer": "https://taikoscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 324,
+    "name": "zkSync",
+    "icon": {
+      "light": "icons/chain/zksync.light.svg",
+      "dark": "icons/chain/zksync.dark.svg"
+    },
+    "explorer": "https://explorer.zksync.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  },
+  {
+    "chainId": 7777777,
+    "name": "Zora",
+    "icon": {
+      "light": "icons/chain/zora.light.svg",
+      "dark": "icons/chain/zora.dark.svg"
+    },
+    "explorer": "https://explorer.zora.energy",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    }
+  }
+]
