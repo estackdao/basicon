@@ -60,6 +60,36 @@
     ]
   },
   {
+    "chainId": 43114,
+    "name": "Avalanche C-Chain",
+    "icon": {
+      "light": "icons/chain/avalanche.light.svg",
+      "dark": "icons/chain/avalanche.dark.svg"
+    },
+    "explorer": "https://snowscan.xyz/",
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "testnets": [
+      {
+        "chainId": 43113,
+        "name": "Avalanche Fuji Testnet",
+        "icon": {
+          "light": "icons/chain/avalanche.light.svg",
+          "dark": "icons/chain/avalanche.dark.svg"
+        },
+        "explorer": "https://testnet.snowscan.xyz/",
+        "nativeCurrency": {
+          "name": "Avalanche",
+          "symbol": "AVAX",
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
     "chainId": 42161,
     "name": "Arbitrum",
     "icon": {
@@ -204,6 +234,36 @@
         "nativeCurrency": {
           "name": "Ether",
           "symbol": "ETH",
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "chainId": 56,
+    "name": "BNB",
+    "icon": {
+      "light": "icons/chain/bsc.light.svg",
+      "dark": "icons/chain/bsc.dark.svg"
+    },
+    "explorer": "https://bscscan.com/",
+    "nativeCurrency": {
+      "name": "bnb",
+      "symbol": "BNB",
+      "decimals": 18
+    },
+    "testnets": [
+      {
+        "chainId": 97,
+        "name": "BNB Testnet",
+        "icon": {
+          "light": "icons/chain/bob.light.svg",
+          "dark": "icons/chain/bob.dark.svg"
+        },
+        "explorer": "https://testnet.bscscan.com/",
+        "nativeCurrency": {
+          "name": "bnb",
+          "symbol": "BNB",
           "decimals": 18
         }
       }
