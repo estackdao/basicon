@@ -78,6 +78,7 @@ type ChainIconProps = {
   size?: number
   className?: string
   alt?: string
+  theme?: 'light' | 'dark'
 }
 
 
@@ -198,7 +199,8 @@ export function ChainIcon({
   name,
   size = 24,
   className = '',
-  alt = 'chain icon'
+  alt = 'chain icon',
+  theme = 'light'
 }: ChainIconProps) {
   let chain = null
 
@@ -208,7 +210,7 @@ export function ChainIcon({
     chain = getChainByName(name)
   }
 
-  const iconFile = chain?.icon || 'default.svg'
+  const iconFile = theme === 'dark' ? chain?.icon.dark : chain?.icon.light;
   const src = `/icons/chains/${iconFile}`
 
   return (
