@@ -1,0 +1,16 @@
+{
+  "name": "basion",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A set of free MIT-licensed high-quality SVG icons for UI development.",
+  "scripts": {
+    "build-icon": "node ./package/src/scripts/build.js"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  }
+}

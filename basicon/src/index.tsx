@@ -1,5 +1,7 @@
-import chainData from "../data/chain.json";
-import tokenData from '../data/token.json';
+import React from 'react'
+import clsx from 'clsx'
+import chainData from "./data/chain.json";
+import tokenData from './data/token.json';
 
 type ChainIcon = {
   light: string;
@@ -60,6 +62,24 @@ type TokenFilters = {
 type Chains = Chain[];
 type Tokens = Token[];
 
+type TokenIconProps = {
+  name?: string
+  symbol?: string
+  chainId?: number
+  address?: string
+  size?: number
+  className?: string
+  alt?: string
+}
+
+type ChainIconProps = {
+  chainId?: number
+  name?: string
+  size?: number
+  className?: string
+  alt?: string
+}
+
 
 const chains = chainData as Chains;
 const tokens = tokenData as Tokens;
@@ -115,6 +135,14 @@ export function getTokenByName(name: string, chainId?: number): Token | undefine
   return candidates.find(token => token.addresses.some(addr => addr.chainId === chainId)) || candidates[0];
 }
 
+export function getTokenByAddress(chainId: number, address: string) {
+  return tokens.find(t =>
+    t.addresses.some(a =>
+      a.chainId === chainId && a.address.toLowerCase() === address.toLowerCase()
+    )
+  )
+}
+
 export function getTokenList(filters: TokenFilters = {}): Token[] {
   let result = [...tokens];
 
@@ -129,4 +157,68 @@ export function getTokenList(filters: TokenFilters = {}): Token[] {
   }
 
   return result;
+}
+
+export function TokenIcon({
+  name,
+  symbol,
+  chainId,
+  address,
+  size = 24,
+  className = '',
+  alt = 'token icon'
+}: TokenIconProps) {
+  let token = null
+
+  if (chainId && address) {
+    token = getTokenByAddress(chainId, address)
+  } else if (symbol) {
+    token = getTokenBySymbol(symbol)
+  } else if (name) {
+    token = getTokenByName(name)
+  }
+
+  const iconFile = token?.icon || 'default.svg'
+  const src = `/icons/tokens/${iconFile}`
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={size}
+      height={size}
+      className={clsx(`w-[${size}px] h-[${size}px]`, className)}
+      loading="lazy"
+    />
+  )
+}
+
+export function ChainIcon({
+  chainId,
+  name,
+  size = 24,
+  className = '',
+  alt = 'chain icon'
+}: ChainIconProps) {
+  let chain = null
+
+  if (chainId) {
+    chain = getChainById(chainId)
+  } else if (name) {
+    chain = getChainByName(name)
+  }
+
+  const iconFile = chain?.icon || 'default.svg'
+  const src = `/icons/chains/${iconFile}`
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={size}
+      height={size}
+      className={clsx(`w-[${size}px] h-[${size}px]`, className)}
+      loading="lazy"
+    />
+  )
 }
