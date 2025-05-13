@@ -1,0 +1,34 @@
+{
+  "name": "basicon",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A set of free MIT-licensed high-quality SVG icons for UI development.",
+  "files": [
+    "dist",
+    "data",
+    "icons"
+  ],
+  "scripts": {
+    "build": "tsup src",
+    "dev": "tsup src --watch"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/react": "^19.1.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.1.4"
+  }
+}
