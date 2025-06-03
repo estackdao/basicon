@@ -1,0 +1,24 @@
+name: Release Beta
+
+on:
+  push:
+    branches:
+      - next
+  workflow_dispatch:
+
+jobs:
+  prerelease:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org/'
+
+      - run: corepack enable && pnpm install
+      - run: pnpm build
+
+      - run: pnpm publish --access public --tag beta
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
