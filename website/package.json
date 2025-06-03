@@ -23,7 +23,6 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest",
-    "vite": "latest"
+    "typescript": "latest"
   }
 }
