@@ -12,6 +12,7 @@
     "icons"
   ],
   "scripts": {
+    "build-icon": "node scripts/optimize.js && node scripts/build-icon.js",
     "build": "tsup src",
     "dev": "tsup src --watch"
   },
@@ -24,11 +25,13 @@
   },
   "sideEffects": false,
   "devDependencies": {
-    "@types/react": "^19.1.4",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "react": "^19.1.4"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }

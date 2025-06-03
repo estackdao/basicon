@@ -1,5 +1,6 @@
-import { TokenIcon, ChainIcon } from "basicon"
+import { TokenIcon, ChainIcon, TokenType } from "basicon"
 import { getTokenByAddress, getTokenByName, getTokenBySymbol, getAllChains, getChainById, getChainByName, getChainList, getAllTokens, getTokenList } from "basicon";
+
 
 export default function Home() {
   const token = getTokenList();
@@ -23,11 +24,14 @@ export default function Home() {
   return (
     <div>
       <h1>Token Icons</h1>
-      <TokenIcon name="Ethereum" symbol="ETH" chainId={1} address="0x1234567890abcdef" />
-      <TokenIcon name="Bitcoin" symbol="BTC" chainId={1} address="0xabcdef1234567890" />
+      <TokenIcon symbol="aave" size={32} />
+      {token.map((token) => (
+        <TokenIcon key={token.symbol} symbol={token.symbol} className="w-24 h-24" />
+      ))}
       <h1>Chain Icons</h1>
-      <ChainIcon name="Ethereum" chainId={1} />
-
+      {chain.map((chain) => (
+        <ChainIcon key={chain.name} name={chain.name} className="w-32 h-32" />
+      ))}
     </div>
   );
 }

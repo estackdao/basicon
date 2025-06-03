@@ -1,20 +1,20 @@
-import * as React from 'react'
-import clsx from 'clsx'
-import chainData from "./data/chain.json";
-import tokenData from './data/token.json';
+import chainData from "./data/chain";
+import tokenData from './data/token';
+import * as ChainIcons from './generated/chain';
+import * as TokenIcons from './generated/token';
 
-type ChainIcon = {
+export type ChainIcon = {
   light: string;
   dark: string;
 }
 
-type ChainNativaCurrency = {
+export type ChainNativaCurrency = {
   name: string;
   symbol: string;
   decimals: number;
 }
 
-type Testnet = {
+export type Testnet = {
   chainId: number;
   name: string;
   icon: ChainIcon;
@@ -22,12 +22,12 @@ type Testnet = {
   nativeCurrency: ChainNativaCurrency;
 }
 
-type ChainFilters = {
+export type ChainFilters = {
   chainIds?: number[];
   nameContains?: string;
 }
 
-type Chain = {
+export type Chain = {
   chainId: number;
   name: string;
   icon: ChainIcon;
@@ -36,16 +36,16 @@ type Chain = {
   testnets: Testnet[];
 }
 
-type TokenType = "ERC20" | "BEP20" | "Native";
+export type TokenType = "ERC20" | "BEP20" | "Native";
 
-type TokenAddress = {
+export type TokenAddress = {
   chainId: number;
   address: string;
   decimals: number;
   type: TokenType;
 }
 
-type Token = {
+export type Token = {
   id: string;
   name: string;
   symbol: string;
@@ -53,26 +53,25 @@ type Token = {
   addresses: TokenAddress[];
 }
 
-type TokenFilters = {
+export type TokenFilters = {
   symbols?: string[];
   nameContains?: string;
 }
 
 
-type Chains = Chain[];
-type Tokens = Token[];
+export type Chains = Chain[];
+export type Tokens = Token[];
 
-type TokenIconProps = {
-  name?: string
-  symbol?: string
-  chainId?: number
-  address?: string
-  size?: number
-  className?: string
-  alt?: string
+export type TokenIconProps = {
+  name?: string;
+  symbol?: string;
+  chainId?: number;
+  address?: string;
+  size?: number;
+  className?: string;
 }
 
-type ChainIconProps = {
+export type ChainIconProps = {
   chainId?: number
   name?: string
   size?: number
@@ -165,11 +164,11 @@ export function TokenIcon({
   symbol,
   chainId,
   address,
-  size = 24,
+  size = 48,
   className = '',
-  alt = 'token icon'
 }: TokenIconProps) {
-  let token = null
+
+  let token: Token | undefined = undefined
 
   if (chainId && address) {
     token = getTokenByAddress(chainId, address)
@@ -178,20 +177,13 @@ export function TokenIcon({
   } else if (name) {
     token = getTokenByName(name)
   }
+  if (!token || !token.symbol) return null;
 
-  const iconFile = token?.icon || 'default.svg'
-  const src = `/icons/tokens/${iconFile}`
-
-  return (
-    <img
-      src={src}
-      alt={alt}
-      width={size}
-      height={size}
-      className={clsx(`w-[${size}px] h-[${size}px]`, className)}
-      loading="lazy"
-    />
-  )
+  const key = token.symbol.toLowerCase();
+  const Icon = TokenIcons[key as keyof typeof TokenIcons];
+  console.log(Icon, token?.name, token?.symbol.toLowerCase());
+  if (!Icon) return null;
+  return (<Icon width={size} height={size} className={className} />);
 }
 
 export function ChainIcon({
@@ -199,28 +191,20 @@ export function ChainIcon({
   name,
   size = 24,
   className = '',
-  alt = 'chain icon',
   theme = 'light'
 }: ChainIconProps) {
-  let chain = null
+  let chain: Chain | undefined = undefined
 
   if (chainId) {
     chain = getChainById(chainId)
   } else if (name) {
     chain = getChainByName(name)
   }
+  if (!chain || !chain.name) return null;
 
-  const iconFile = theme === 'dark' ? chain?.icon.dark : chain?.icon.light;
-  const src = `/icons/chains/${iconFile}`
 
-  return (
-    <img
-      src={src}
-      alt={alt}
-      width={size}
-      height={size}
-      className={clsx(`w-[${size}px] h-[${size}px]`, className)}
-      loading="lazy"
-    />
-  )
+  const key = `${chain.name.toLowerCase()}_${theme}`;
+  const Icon = ChainIcons[key as keyof typeof ChainIcons];
+  if (!Icon) return null;
+  return (<Icon width={size} height={size} className={className} />);
 }

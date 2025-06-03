@@ -1,11 +1,14 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  sourcemap: false,
-  minify: true,
-  dts: true,
+  entry: ['src/index.ts'],
   format: ['esm', 'cjs'],
-  loader: {
-    '.js': 'jsx',
-  },
-})
+  dts: true,
+  outDir: 'dist',
+  clean: true,
+  external: ['react', 'react-dom'],
+  tsconfig: './tsconfig.json',
+  esbuildOptions(options) {
+    options.jsx = 'automatic';
+  }
+});
