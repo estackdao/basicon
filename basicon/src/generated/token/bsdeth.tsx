@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const Bsdeth = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 216 217" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" {...props}><circle cx={108.03} cy={108.452} r={107.836} fill="#0054FF" /><path d="M53.871 119.532L107.186 195.682L163.665 115.012L107.186 21.2214L53.7686 109.927H125.663V119.532H53.871Z" fill="white" /></svg>;
+export default Bsdeth;
