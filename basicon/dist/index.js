@@ -3011,11 +3011,19 @@ var sei_light_default = Sei_light;
 
 // src/generated/chain/soneium_dark.tsx
 var import_jsx_runtime55 = require("react/jsx-runtime");
-var soneium_dark_default = soneium_dark;
+var Soneium_dark = (props) => /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("svg", { viewBox: "0 0 141 141", fill: "none", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", ...props, children: [
+  /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("path", { d: "M79.019 107.825C66.3252 110.841 52.4038 107.4 42.5041 97.4951C29.7054 84.6977 27.2073 65.7083 36.4532 50.666C40.2713 44.4554 43.8981 40.7427 47.0315 37.622C59.9474 24.7568 83.6698 1.33914 83.6698 1.33914C61.5202 -3.04589 37.6622 3.33737 20.5026 20.5012C-6.83421 47.8352 -6.83421 92.1603 20.5026 119.494C28.9775 127.968 39.0808 133.809 49.8133 137.034L79.0252 107.825H79.019Z", fill: "white" }),
+  /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("path", { d: "M60.9827 32.17C73.6766 29.1541 87.5979 32.5955 97.4977 42.5004C110.296 55.2977 112.794 74.2872 103.549 89.3295C99.7305 95.54 96.1037 99.2528 92.9703 102.374C80.0544 115.239 56.332 138.656 56.332 138.656C78.4815 143.041 102.34 136.658 119.499 119.494C146.836 92.1603 146.836 47.8352 119.499 20.5013C111.024 12.0273 100.921 6.18673 90.1885 2.96118L60.9766 32.17H60.9827Z", fill: "white" })
+] });
+var soneium_dark_default = Soneium_dark;
 
 // src/generated/chain/soneium_light.tsx
 var import_jsx_runtime56 = require("react/jsx-runtime");
-var soneium_light_default = soneium_light;
+var Soneium_light = (props) => /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("svg", { viewBox: "0 0 141 141", fill: "none", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", ...props, children: [
+  /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M79.019 107.825C66.3252 110.841 52.4038 107.4 42.5041 97.4951C29.7054 84.6977 27.2073 65.7083 36.4532 50.666C40.2713 44.4554 43.8981 40.7427 47.0315 37.622C59.9474 24.7568 83.6698 1.33914 83.6698 1.33914C61.5202 -3.04589 37.6622 3.33737 20.5026 20.5012C-6.83421 47.8352 -6.83421 92.1603 20.5026 119.494C28.9775 127.968 39.0808 133.809 49.8133 137.034L79.0252 107.825H79.019Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { d: "M60.9827 32.17C73.6766 29.1541 87.5979 32.5955 97.4977 42.5004C110.296 55.2977 112.794 74.2872 103.549 89.3295C99.7305 95.54 96.1037 99.2528 92.9703 102.374C80.0544 115.239 56.332 138.656 56.332 138.656C78.4815 143.041 102.34 136.658 119.499 119.494C146.836 92.1603 146.836 47.8352 119.499 20.5013C111.024 12.0273 100.921 6.18673 90.1885 2.96118L60.9766 32.17H60.9827Z", fill: "black" })
+] });
+var soneium_light_default = Soneium_light;
 
 // src/generated/chain/sonic_dark.tsx
 var import_jsx_runtime57 = require("react/jsx-runtime");
@@ -3033,11 +3041,46 @@ var sonic_dark_default = Sonic_dark;
 
 // src/generated/chain/sonic_light.tsx
 var import_jsx_runtime58 = require("react/jsx-runtime");
-var sonic_light_default = sonic_light;
+var Sonic_light = (props) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("svg", { viewBox: "0 0 150 150", fill: "none", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", ...props, children: [
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M90.1997 93.2521C62.1077 101.688 38.8697 113.994 24.3197 128.412L23.6777 129.054C27.5477 132.714 31.7897 135.99 36.3737 138.774L37.3577 137.568C41.3297 132.714 45.5897 128.028 50.0237 123.612C61.9277 111.75 75.5477 101.484 90.2117 93.2401L90.1937 93.2521H90.1997Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M0.709961 80.7541C1.83196 95.7961 7.41796 109.59 16.184 120.81L16.586 120.408C25.5919 111.522 37.3159 103.446 51.4579 96.4081C63.8539 90.2341 78.0859 84.9361 93.4279 80.7541H0.709961Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M57.884 18.9301C83.018 43.9741 114.65 60.5341 149.348 66.8161C145.16 29.6881 113.558 0.804062 75.164 0.804062C65.024 0.804062 55.358 2.82606 46.532 6.47406C50.114 10.7881 53.942 14.9881 57.884 18.9301Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M24.3198 21.9961C38.8698 36.4321 62.1078 48.7201 90.1998 57.1741C75.5358 48.9181 61.9158 38.6641 50.0118 26.8021C45.5898 22.3981 41.3358 17.7121 37.3458 12.8461L36.3618 11.6401C31.7778 14.4241 27.5358 17.6941 23.6838 21.3541L24.3258 21.9961H24.3198Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M57.884 131.478C53.924 135.42 50.102 139.62 46.532 143.934C55.346 147.582 65.024 149.604 75.164 149.604C113.564 149.604 145.166 120.72 149.36 83.5801C114.668 89.8621 83.036 106.422 57.896 131.466L57.884 131.478Z", fill: "black" }),
+  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { d: "M51.4579 54.0001C37.3159 46.9621 25.5919 38.8801 16.586 30.0001L16.184 29.5981C7.41796 40.8181 1.83196 54.6121 0.709961 69.6541H93.4099C78.0739 65.472 63.8539 60.174 51.4399 53.982L51.4519 54.0001H51.4579Z", fill: "black" })
+] });
+var sonic_light_default = Sonic_light;
 
 // src/generated/chain/swellchain_dark.tsx
 var import_jsx_runtime59 = require("react/jsx-runtime");
-var swellchain_dark_default = swellchain_dark;
+var Swellchain_dark = (props) => /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("svg", { viewBox: "0 0 64 64", fill: "none", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", ...props, children: [
+  /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("g", { clipPath: "url(#clip0_393_1529)", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("rect", { x: 1.16, y: 1.16, width: 61.68, height: 61.68, rx: 14.84, fill: "url(#paint0_linear_393_1529)" }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("rect", { x: 1.16, y: 1.16, width: 61.68, height: 61.68, rx: 14.84, stroke: "url(#paint1_linear_393_1529)", strokeWidth: 2.32 }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { d: "M48.7178 37.3066L48.6708 37.356C48.6488 37.3788 48.6265 37.4014 48.6039 37.4238L35.6914 50.3156C33.442 52.5614 29.795 52.5614 27.5457 50.3156L23.9798 46.7557C23.727 46.5043 23.7264 46.0955 23.9781 45.843C24.0522 45.7687 24.1432 45.7136 24.2433 45.6822C28.0653 44.5024 31.1707 43.1406 33.5598 41.5967C39.2491 37.9196 44.3018 36.4896 48.7178 37.3066ZM46.0108 26.7016C50.7782 28.2039 50.2217 31.7111 50.285 33.0936C45.0639 30.3559 38.7829 31.3594 31.4417 36.1039C25.97 39.6401 21.3866 41.0981 17.6915 40.4778C13.9965 39.8576 13.1652 35.3447 13 34.1455C17.0602 36.1985 22.5015 35.0202 29.3237 30.6111C35.681 26.5025 41.2433 25.1993 46.0108 26.7016ZM35.6914 16.3993L39.0419 19.744C39.2942 19.9958 39.2946 20.4046 39.0429 20.657C38.953 20.7471 38.8385 20.8085 38.7139 20.8337C33.8635 21.8108 29.9845 23.2391 27.0766 25.1183C22.0937 28.3387 17.8476 29.8355 14.338 29.6088L14.3384 29.6079L27.5457 16.3993C29.795 14.1535 33.442 14.1535 35.6914 16.3993Z", fill: "url(#paint2_linear_393_1529)" }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M44.1917 9.99998C42.303 9.99998 40.772 11.531 40.772 13.4197V20.3405C40.772 22.2292 42.303 23.7601 44.1917 23.7601H51.4401C53.3288 23.7601 54.8598 22.2292 54.8598 20.3405V13.4197C54.8598 11.531 53.3288 9.99998 51.4401 9.99998H44.1917ZM43.6375 14.0284V19.2704H46.8958V18.4744H44.5871V14.0284H43.6375ZM48.0292 18.5844V19.2704H51.6228V18.4769H49.3396V18.4411L50.2432 17.5222C50.5828 17.1946 50.8464 16.9156 51.0341 16.6853C51.2235 16.4549 51.3557 16.245 51.4309 16.0556C51.5059 15.8662 51.5434 15.6734 51.5434 15.4772C51.5434 15.1837 51.4692 14.9226 51.3208 14.694C51.174 14.4652 50.9676 14.2853 50.7013 14.1539C50.4352 14.0225 50.1264 13.9568 49.7748 13.9568C49.4284 13.9568 49.1212 14.0242 48.8534 14.159C48.5872 14.2938 48.3781 14.484 48.2262 14.7298C48.0744 14.9754 47.9984 15.2647 47.9984 15.5974H48.902C48.902 15.4183 48.937 15.2638 49.007 15.1342C49.0786 15.0045 49.1793 14.9047 49.309 14.8347C49.4386 14.763 49.5896 14.7272 49.762 14.7272C49.9292 14.7272 50.0786 14.7596 50.2099 14.8245C50.3413 14.8893 50.4446 14.9814 50.5196 15.1009C50.5948 15.2186 50.6323 15.3602 50.6323 15.5258C50.6323 15.6709 50.6032 15.8074 50.5453 15.9353C50.4872 16.0633 50.4002 16.1955 50.2841 16.332C50.1681 16.4685 50.0231 16.6247 49.8491 16.8004L48.0292 18.5844Z", fill: "url(#paint3_linear_393_1529)" })
+  ] }),
+  /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("defs", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("linearGradient", { id: "paint0_linear_393_1529", x1: 32, y1: 0, x2: 32, y2: 64, gradientUnits: "userSpaceOnUse", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { stopColor: "#10012A" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { offset: 1, stopColor: "#2A036A" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("linearGradient", { id: "paint1_linear_393_1529", x1: 32, y1: 0, x2: 32, y2: 64, gradientUnits: "userSpaceOnUse", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { stopColor: "#7CAFFB" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { offset: 1, stopColor: "#CEDFFD" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("linearGradient", { id: "paint2_linear_393_1529", x1: 31.6425, y1: 14.7149, x2: 31.6425, y2: 52, gradientUnits: "userSpaceOnUse", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { stopColor: "#7DADFF" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { offset: 1, stopColor: "#CEDFFF" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("linearGradient", { id: "paint3_linear_393_1529", x1: 47.8159, y1: 9.99998, x2: 47.8159, y2: 23.7601, gradientUnits: "userSpaceOnUse", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { stopColor: "#FFB901" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("stop", { offset: 1, stopColor: "#F9CB53" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("clipPath", { id: "clip0_393_1529", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("rect", { width: 64, height: 64, fill: "white" }) })
+  ] })
+] });
+var swellchain_dark_default = Swellchain_dark;
 
 // src/generated/chain/swellchain_light.tsx
 var import_jsx_runtime60 = require("react/jsx-runtime");
