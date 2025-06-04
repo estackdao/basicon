@@ -2,6 +2,8 @@ import React from 'react';
 import { Copy, Github, BookOpen, Zap, Code } from "lucide-react"
 import { Button } from "./ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import Link from 'next/link';
+
 
 export function HomePage() {
   const [isMounted, setIsMounted] = React.useState(false)
@@ -26,8 +28,8 @@ export function HomePage() {
     },
     {
       icon: <Code className="h-5 w-5 text-blue-500" />,
-      title: "Simple & modular",
-      description: "Use headlessly, or with UI. No extensions, API keys, passwords, or seed phrases needed.",
+      title: "Simple & Minimal",
+      description: "No complex setup. Just install and use. No dynamic fetch, no API keys.",
     }
   ]
 
@@ -107,53 +109,40 @@ export function HomePage() {
                 </div>
               </Tabs>
 
-              {/* Code Example */}
-              <div className="bg-gray-100/50 rounded-lg p-4 border mt-4 border-gray-300">
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-400 font-mono text-sm">1</span>
-                    <code className="text-gray-700 font-mono text-sm">{"import { Porto } from 'porto'"}</code>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-400 font-mono text-sm">2</span>
-                    <code className="text-gray-700 font-mono text-sm">
-                      {"Porto."}
-                      <span className="text-blue-600">create</span>
-                      {"()"}
-                    </code>
-                  </div>
-                </div>
-              </div>
-            </section>
 
-            {/* Features Grid */}
-            <section className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                {features.map((feature, index) => (
-                  <div key={index} className="space-y-3 border border-gray-200 rounded-xl p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-2 bg-gray-50 rounded-lg">{feature.icon}</div>
-                      <h3 className="font-semibold text-gray-900">{feature.title}</h3>
+              {/* Features Grid */}
+              <section className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  {features.map((feature, index) => (
+                    <div key={index} className="space-y-3 border border-gray-200 rounded-xl p-4">
+                      <div className="flex items-center space-x-3">
+                        <div className="p-2 bg-gray-50 rounded-lg">{feature.icon}</div>
+                        <h3 className="font-semibold text-gray-900">{feature.title}</h3>
+                      </div>
+                      <p className="text-gray-600 text-sm leading-relaxed pl-11">{feature.description}</p>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pl-11">{feature.description}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+                  ))}
+                </div>
+              </section>
 
-            {/* Call to Action */}
-            <section className="space-y-3">
-              <div className="flex items-center space-x-4">
-                <Button className="bg-gray-100 hover:bg-gray-200 text-gray-800">
-                  <BookOpen className="h-4 w-4 mr-2" />
-                  Documentation
-                </Button>
-                <Button variant="outline" className="border-gray-300">
-                  <Github className="h-4 w-4 mr-2" />
-                  GitHub
-                </Button>
-              </div>
-            </section>
+              {/* Call to Action */}
+              <section className="space-y-3">
+                <div className="flex items-center space-x-4">
+                  <Link href="https://github.com/wetalabs/basicon/">
+                    <Button className="bg-gray-100 hover:bg-gray-200 text-gray-800">
+                      <BookOpen className="h-4 w-4 mr-2" />
+                      Documentation
+                    </Button>
+                  </Link>
+
+                  <Link href="https://github.com/wetalabs/basicon">
+                    <Button variant="outline" className="border-gray-300">
+                      <Github className="h-4 w-4 mr-2" />
+                      GitHub
+                    </Button>
+                  </Link>
+                </div>
+              </section>
           </div>
         </div>
       </main>

@@ -1,7 +1,3 @@
-<p align="center">
-<img src="./website/public/logo.png" />
-</p>
-
 ## Basicon
 
 Basicon is a minimal, trusted npm dependency for chain and token metadata & SVG icons. All locally served, no dynamic fetch, fully type-safe.
@@ -119,5 +115,5 @@ token metadata:
 
 ### Submit Info
 
-- token/chain metadata: [basicon\src\data](\basicon\src\data)
-- token/chain svg component: [basicon\src\generated](\basicon\src\generated)
+- token/chain metadata: [basicon\src\data](.\src\data)
+- token/chain svg component: [basicon\src\generated](.\src\generated)

@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./website/public/logo.png" />
+<img src="./website/docs/public/logo.png" />
 </p>
 
 ## Basicon
@@ -119,5 +119,5 @@ token metadata:
 
 ### Submit Info
 
-- token/chain metadata: [basicon\src\data](\basicon\src\data)
-- token/chain svg component: [basicon\src\generated](\basicon\src\generated)
+- token/chain metadata: [basicon\src\data](./basicon/src/data)
+- token/chain svg component: [basicon\src\generated](./basicon/src/generated)
