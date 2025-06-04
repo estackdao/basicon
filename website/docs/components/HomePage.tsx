@@ -12,10 +12,10 @@ export function HomePage() {
   if (!isMounted) return null
 
   const installCommands = [
-    { manager: "npm", command: "npm install awesome-package" },
-    { manager: "pnpm", command: "pnpm add awesome-package" },
-    { manager: "yarn", command: "yarn add awesome-package" },
-    { manager: "bun", command: "bun add awesome-package" },
+    { manager: "npm", command: "npm install basicon" },
+    { manager: "pnpm", command: "pnpm add basicon" },
+    { manager: "yarn", command: "yarn add basicon" },
+    { manager: "bun", command: "bun add basicon" },
   ]
 
   const features = [

@@ -5,11 +5,9 @@
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "version": "0.0.1",
-  "description": "A set of free MIT-licensed high-quality SVG icons for UI development.",
+  "description": "Minimal, trusted npm dependency for chain and token metadata & SVG icons. All locally served, no dynamic fetch, fully type-safe",
   "files": [
-    "dist",
-    "data",
-    "icons"
+    "dist"
   ],
   "scripts": {
     "build-icon": "node scripts/optimize.js && node scripts/build-icon.js",
