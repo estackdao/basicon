@@ -7,15 +7,6 @@
 		"generate": "pnpm -F basicon build-icon",
 		"dev": "pnpm -F basicon build --watch"
 	},
-	"keywords": [
-		"icons",
-		"chain",
-		"token"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/wetalabs/basicon.git"
-	},
 	"devDependencies": {
 		"@playwright/test": "1.51.0",
 		"prettier": "2.7.1",
