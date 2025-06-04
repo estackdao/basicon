@@ -1,20 +1,11 @@
 {
 	"name": "basicon-root",
-	"private": true,
+	"private": false,
 	"version": "0.0.1",
 	"scripts": {
 		"build": "pnpm -F basicon build",
 		"generate": "pnpm -F basicon build-icon",
 		"dev": "pnpm -F basicon build --watch"
-	},
-	"keywords": [
-		"icons",
-		"chain",
-		"token"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/wetalabs/basicon.git"
 	},
 	"devDependencies": {
 		"@playwright/test": "1.51.0",
