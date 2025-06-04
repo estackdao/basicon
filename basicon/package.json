@@ -16,6 +16,15 @@
     "build": "tsup src",
     "dev": "tsup src --watch"
   },
+  "keywords": [
+    "icons",
+    "chain",
+    "token"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wetalabs/basicon.git"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
