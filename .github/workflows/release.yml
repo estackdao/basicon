@@ -51,9 +51,8 @@ jobs:
       - name: Authenticate GH CLI
         run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
-      - name: Create GitHub Pre-Release
+      - name: Create GitHub Release
         run: |
           gh release create "v${{ steps.version.outputs.version }}" \
             --title "v${{ steps.version.outputs.version }}" \
-            --notes "Beta prerelease published via GitHub Actions" \
-            --prerelease
+            --notes "Stable release published via GitHub Actions" \
