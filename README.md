@@ -17,7 +17,7 @@ pnpm install basicon
 ```tsx
 import { getTokenByAddress, getTokenByName, getTokenBySymbol, getAllChains, getChainById, getChainByName, getChainList, getAllTokens, getTokenList } from "basicon";
 
-const token = getTokenList();
+const token = getTokenList(); 
 const chain = getChainList({ chainIds: [1, 10, 42161] });
 const tokenBySymbol = getTokenBySymbol("ETH");
 const tokenByName = getTokenByName("Ethereum");
@@ -46,10 +46,6 @@ chain metadata:
 {
   "chainId": 1,
   "name": "Ethereum",
-  "icon": {
-    "light": "icons/chain/ethereum.light.svg",
-    "dark": "icons/chain/ethereum.dark.svg"
-  },
   "explorer": "https://etherscan.io",
   "nativeCurrency": {
     "name": "Ether",
@@ -60,10 +56,6 @@ chain metadata:
     {
       "chainId": 17000,
       "name": "Holesky",
-      "icon": {
-        "light": "icons/chain/ethereum.light.svg",
-        "dark": "icons/chain/ethereum.dark.svg"
-      },
       "explorer": "https://holesky.etherscan.io/",
       "nativeCurrency": {
         "name": "Ether",
@@ -116,8 +108,20 @@ token metadata:
 
 ```
 
+Basicon allows full flexibility in how icons are deployed and rendered:
+- You can fork the icon directory to host the raw SVG icons on your own CDN.
+- Use the provided metadata to define your own custom <TokenIcon /> or <ChainIcon /> components, tailored to your frontend needs.
+
 
 ### Submit Info
 
+#### Meta
+
 - token/chain metadata: [basicon\src\data](./basicon/src/data)
 - token/chain svg component: [basicon\src\generated](./basicon/src/generated)
+
+#### Icon
+
+- Format: SVG
+- Chain Icon: [basicon/icon/chain](./basicon/icon/chain)
+- Token Icon: [basicon/icon/token](./basicon/icon/chain)

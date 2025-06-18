@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wetalabs/basicon.git"
+    "url": "git+https://github.com/estackdao/basicon.git"
   },
   "exports": {
     ".": {

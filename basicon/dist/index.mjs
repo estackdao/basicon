@@ -111,7 +111,7 @@ import "./chunk-DQIQNZKG.mjs";
 import "./chunk-UUD3PLUJ.mjs";
 import {
   chain_default
-} from "./chunk-3R2CH5FG.mjs";
+} from "./chunk-FCUAGMLN.mjs";
 import {
   token_default
 } from "./chunk-PFRTCTDT.mjs";
