@@ -1,13 +1,14 @@
+## Basicon
+
+**One import, all the onchain metadata. That’s Basicon — simple, fast, and type-safe.**
+
 <p align="center">
 <img src="./website/docs/public/logo.png" />
 </p>
 
-## Basicon
+### Introduction
 
 Basicon is a minimal, trusted npm dependency for chain and token metadata & SVG icons. All locally served, no dynamic fetch, fully type-safe.
-
-*One import, all the onchain metadata. That’s Basicon — simple, fast, and type-safe.*
-
 
 ### Install
 
