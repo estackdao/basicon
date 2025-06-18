@@ -4,7 +4,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Minimal, trusted npm dependency for chain and token metadata & SVG icons. All locally served, no dynamic fetch, fully type-safe",
   "files": [
     "dist"
