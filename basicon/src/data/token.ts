@@ -1146,25 +1146,6 @@ const tokenData = [
     ]
   },
   {
-    "id": "eurc",
-    "name": "Euro Coin",
-    "symbol": "EURC",
-    "addresses": [
-      {
-        "chainId": 8453,
-        "address": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
-        "decimals": 6,
-        "type": "ERC20"
-      },
-      {
-        "chainId": 1,
-        "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
-        "decimals": 6,
-        "type": "ERC20"
-      }
-    ]
-  },
-  {
     "id": "usdt0",
     "name": "Layerzero Tether USD",
     "symbol": "USDT0",
@@ -1188,7 +1169,89 @@ const tokenData = [
         "type": "ERC20"
       }
     ]
-  }
+  },
+  {
+    "id": "rseth",
+    "name": "Kelp Restaked ETH",
+    "symbol": "rsETH",
+    "addresses": [
+      {
+        "chainId": 42161,
+        "address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+        "decimals": 18,
+        "type": "ERC20"
+      },
+      {
+        "chainId": 1,
+        "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "decimals": 18,
+        "type": "ERC20"
+      },
+    ]
+  },
+  {
+    "id": "wrseth",
+    "name": "Kelp  Restaked ETH Wrapper",
+    "symbol": "rsETH",
+    "addresses": [
+      {
+        "chainId": 10,
+        "address": "0x87eee96d50fb761ad85b1c982d28a042169d61b1",
+        "decimals": 18,
+        "type": "ERC20"
+      },
+      {
+        "chainId": 8453,
+        "address": "0xedfa23602d0ec14714057867a78d01e94176bea0",
+        "decimals": 18,
+        "type": "ERC20"
+      },
+    ]
+  },
+  {
+    "id": "virtual",
+    "name": "Virtual",
+    "symbol": "VIRTUAL",
+    "addresses": [
+      {
+        "chainId": 1,
+        "address": "0x44ff8620b8ca30902395a7bd3f2407e1a091bf73",
+        "decimals": 18,
+        "type": "ERC20"
+      },
+      {
+        "chainId": 8453,
+        "address": "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+        "decimals": 18,
+        "type": "ERC20"
+      }
+    ]
+  },
+  {
+    "id": "eurc",
+    "name": "EUR Coin",
+    "symbol": "EURC",
+    "addresses": [
+      {
+        "chainId": 1,
+        "address": "0x1abaea1f7c830bd89acc67ec4af516284b1bc33c",
+        "decimals": 6,
+        "type": "ERC20"
+      },
+      {
+        "chainId": 8453,
+        "address": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+        "decimals": 6,
+        "type": "ERC20"
+      },
+      {
+        "chainId": 43114,
+        "address": "0xc891eb4cbdeff6e073e859e987815ed1505c2acd",
+        "decimals": 6,
+        "type": "ERC20"
+      }
+    ]
+  },
 ]
 
 export default tokenData;
